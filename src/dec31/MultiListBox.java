@@ -13,6 +13,7 @@ public class MultiListBox {
 		Select dropdown=new Select(driver.findElement(By.name("multiSelection")));
 		boolean value=dropdown.isMultiple();
 		System.out.println(value);
+		
 		//select six item from drop down
 		dropdown.selectByIndex(0);
 		Thread.sleep(5000);
@@ -26,6 +27,7 @@ public class MultiListBox {
 		Thread.sleep(5000);
 		dropdown.selectByIndex(8);
 		Thread.sleep(5000);
+		
 		//count no of items which are are selected
 		List<WebElement>items=dropdown.getAllSelectedOptions();
 		System.out.println("no of items selected::"+items.size());
