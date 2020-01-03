@@ -10,11 +10,11 @@ public class RadioButtons {
 
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver=new ChromeDriver();
-		driver.navigate().to("https://www.cleartrip.com/");
+		driver.navigate().to("https://www.facebook.com/");
 		driver.manage().window().maximize();	
 
 		//get collection of radio buttons
-		List<WebElement>Olist=driver.findElements(By.xpath("//form/nav/ul/li/label/strong"));
+		List<WebElement>Olist=driver.findElements(By.xpath("//form/div/div/span/span"));
 		System.out.println("no of radio buttons are::"+Olist.size());
 		
 		for(int i=0;i<Olist.size();i++)
@@ -34,4 +34,4 @@ public class RadioButtons {
 	}
 
 }
-
+ 
